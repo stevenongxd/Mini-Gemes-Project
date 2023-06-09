@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+}
+
+.judul {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* Main Content */
+.game-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.opponent {
+  margin-bottom: 20px;
+}
+
+.player {
+  margin-bottom: 20px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.opponent, .player {
+  text-align: center;
+  position: relative;
+  width: 65%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.opponent img, .player img {
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info {
+  width: 30%;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scores {
+  text-align: center;
+}
+
+/* Hover */
+.player img:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(25deg);
+}
+
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  font-size: larger;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  max-width: 1920px;
+  height: 50px;
+  padding: 50px 100px;
+  color: white;
+  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Styles */
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  .opponent, .player {
+    width: 80%;
+  }
+
+  .info {
+    width: 50%;
+  }
+
+  .game-container {
+    flex-direction: column;
+  }
+
+  .opponent, .player {
+    margin-bottom: 20px;
+  }
+
+  .result {
+    margin-bottom: 20px;
+  }
+
+  .scores {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 50px 50px;
+  }
+
+  .judul {
+    margin: 20px 0;
+  }
+
+  .opponent img, .player img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .opponent, .player {
+    padding: 10px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 12px;
+  }
+
+  .opponent, .player {
+    width: 90%;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .opponent img, .player img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .opponent, .player {
+    padding: 5px;
+  }
+
+  .info {
+    padding: 5px;
+  }
+
+  footer {
+    padding: 50px 20px;
+  }
+
+  .judul {
+    margin: 20px 0;
+  }
+}
