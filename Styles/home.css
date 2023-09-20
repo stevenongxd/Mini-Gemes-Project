@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lekton', sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.box-container{
+  height: 800px;
+  display: block;
+  margin: 20px auto;
+}
+
+.box-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+}
+
+.box-position{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+
+.box-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: #242864;
+    margin: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;   
+}
+
+.box-menu:hover {
+  transform: translateY(-7px);
+}
+
+
+.image{
+    height: auto;
+    width: 100px;
+    border-radius: 10px;    
+}
+
+.box-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px; 
+}
+
+
+.toptext{
+    color: white;
+    text-align: center;
+}
+
+.bottext{
+    color: white;
+    text-align: center;
+
+}
+
+.box-menu.bot{
+    width: 455px;
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #242864;
+    color: white;
+}
+
+#banner-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .box-menu.bot{
+    width: 300px;
+  }
+
+  .box-menu{
+    width: 200px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  .h3{
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .image{
+    width: 25%;
+  }
+
+  #logo{
+    width: 80%;
+  }
+
+  .box-menu{
+    width: 80%;
+    height: 150px;
+  }
+
+  .box-menu.bot{
+    width: 80%;
+    
+  }
+
+  .box-text{
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  h1{
+    font-size: 15px;
+  }
+
+  h3{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,61 @@
+main {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#feedback-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#feedback-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+}
+
+/* CSS for the submit button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  main {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    font-size: 18px;
+  }
+}
