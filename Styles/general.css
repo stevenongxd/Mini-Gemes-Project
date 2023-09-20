@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lekton', sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: #120c59;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-component {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#header-component h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+#header-component .small {
+  display: none;
+}
+
+#header-component ul {
+  display: flex;
+  list-style: none;
+  margin-left: 40px;
+}
+
+#header-component ul li {
+  margin-left: 40px;
+}
+
+#header-component ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+#header-component ul li a:hover {
+  color: #c5c5c5;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+  width: 100%;
+  height: 100px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  background-color: #120c59;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  #header-component {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #header-component ul {
+    margin: 0;
+    align-items: center;
+  }
+
+  #header-component ul li a {
+    font-size: 20px;
+  }
+  
+  .logo.big {
+    display: none;
+  }
+
+  .logo.small {
+    display: block;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  footer {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  #header-component {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logo-container img {
+    display: none;
+  }
+
+  #header-component ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  #header-component ul li {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  #header-component ul li a {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 15px;
+    text-align: center;
+  }
+}
