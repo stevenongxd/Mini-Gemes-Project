@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Gemes | Rock Paper Scissors</title>
+  <link rel="stylesheet" href="rps.css">
+  <link rel="stylesheet" href="/Mini-Gemes-Project/Styles/general.css">
+  <link rel="icon" href="/Mini-Gemes-Project/Assets/MG_Small.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header & Nav -->
+  <header>
+    <div id="header-component">
+      <div id="logo-container">
+        <img src="/Mini-Gemes-Project/Assets/MG_Big.png" alt="MG_Big.png" class="logo big">
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="/Mini-Gemes-Project/index.html">HOME</a></li>
+          <li><a href="/Mini-Gemes-Project/about.html">ABOUT US</a></li>
+          <li><a href="/Mini-Gemes-Project/feedback.html">FEEDBACK</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Container Judul -->
+  <div class="judul">
+    <h1>Rock Paper Scissors</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="game-container">
+
+    <!-- Musuh/Bot -->
+    <div class="opponent">
+      <h2>Opponent</h2>
+      <img src="/Mini-Gemes-Project/Assets/questionMark.jpg" alt="No Choice" class="img-comp">
+    </div>
+
+    <!-- Player -->
+    <div class="player">
+      <h2>Player</h2>
+      <ul>
+        <li><img src="/Mini-Gemes-Project/Assets/rock.png" alt="rock" class="rock"></li>
+        <li><img src="/Mini-Gemes-Project/Assets/paper.png" alt="paper" class="paper"></li>
+        <li><img src="/Mini-Gemes-Project/Assets/scissors.png" alt="scissors" class="scissors"></li>
+      </ul>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+      <!-- Result -->
+      <div class="result">
+        <h2>Result</h2>
+        <p></p>
+      </div>
+      <hr>
+      <!-- Scores -->
+      <div class="scores">
+        <h2>Scores</h2>
+        <p>Player: </p>
+        <p>Opponent: </p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>Copyright &#169; Mini Gemes 2023</p>
+  </footer>
+
+  <script src="rps.js"></script>
+</body>
+</html>

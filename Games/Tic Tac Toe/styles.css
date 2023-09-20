@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Lekton', sans-serif;
+    background-color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+  
+html {
+    overflow-x: hidden;
+}
+
+#box1{
+    border-top:0px;
+    border-left:0px;
+}
+#box4{
+    border-left:0px;
+}
+
+#box7{
+    border-left:0px;
+    border-bottom:0px;
+}
+
+#box8{
+    border-bottom:0px;
+}
+
+#box9{
+    border-bottom:0px;
+     border-right:0px;
+}
+#box6{
+    border-right:0px;
+}
+#box3{
+    border-right:0px;
+    border-top:0px;
+}
+
+#box2{
+    border-top:0px;
+}
+
+#tictactoe-container{
+    
+    display:grid;
+    grid-template-areas: 
+    'box1 box2 box3'
+    'box4 box5 box6'
+    'box7 box8 box9';
+    background-color:white;
+    padding:50px;
+    box-shadow:2px 2px 2px 2px grey;
+    
+}
+
+#title{
+    font-size:36px;
+}
+
+#instruction{
+    font-size:32px;
+}
+
+.score-box{
+    font-size:24px;
+    border:2px solid black;
+    padding-inline:100px;
+
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+
+.ticbox{
+    width:100%;
+    min-width:75px;
+    max-width:175px;
+    height:100px;
+    font-size:60px;
+    text-align:center;
+    cursor:pointer;
+    border:solid 2px;
+    outline:none;
+    background-color:white;
+
+}
+
+.ticbox.unclickable{
+    pointer-events:none;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color:rgb(236, 236, 236);
+}
+
+.score-row{
+    display:flex;
+    gap:5px;
+}
+
+.container-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    align-self:center;
+    align-items:center;
+    flex-direction:column;
+    gap :20px;
+    width:fit-content;
+    text-align:center;
+}
+
+button{
+    width:100%;
+    max-width:300px;
+    height:50px;
+    font-size:30px;
+    cursor:pointer;
+}
